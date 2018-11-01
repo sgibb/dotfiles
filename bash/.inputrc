@@ -1,0 +1,11 @@
+set editing-mode vi
+set keymap vi
+
+"K": history-search-backward
+"J": history-search-forward
+
+# Use case-insensitive TAB autocompletion
+set completion-ignore-case on
+
+# Auto list tab completions (use instead of TAB-cycling)
+set show-all-if-ambiguous on

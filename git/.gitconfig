@@ -1,0 +1,43 @@
+[alias]
+    br = branch
+    branches = for-each-ref --sort=-committerdate --format=\"%(color:green)%(authordate:relative)\t%(color:blue)%(color:bold)%(authorname)%(color:reset)\t%(color:yellow)%(refname:short)\" refs/remotes
+    ci = commit
+    contributors = shortlog --summary --numbered
+    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    deletemergedbranches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative ORIG_HEAD..HEAD
+    st = status
+    vimdiff = difftool
+    vd = difftool
+[user]
+	name = Sebastian Gibb
+	email = mail@sebastiangibb.de
+[color]
+	diff = auto
+	status = auto
+    	branch = auto
+	prompt = false
+[merge]
+  	tool = vimdiff
+	colorMoved = zebra
+[mergetool]
+	prompt = false
+[mergetool "vimdiff"]
+  	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[diff]
+	tool = vimdiff
+	colorMoved = zebra
+[difftool]
+  	prompt = false
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitignore
+[help]
+    # automatically correct mistyped commands
+    autocorrect = 1
+[rerere]
+	enabled = true
+[github]
+	user = sgibb
