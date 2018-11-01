@@ -20,6 +20,7 @@ function! PackagerInit() abort
     call packager#add('editorconfig/editorconfig-vim')
 
     call packager#add('jalvesaq/Nvim-R')
+    call packager#add('mllg/vim-devtools-plugin')
 
     " colorschemes
     call packager#add('morhetz/gruvbox', { 'type': 'opt' })
@@ -122,7 +123,7 @@ augroup END
 
 " functions {{{
 " take from https://github.com/editorconfig/editorconfig-vim/blob/master/plugin/editorconfig.vim
-function! s:TrimTrailingWhitespace() 
+function! s:TrimTrailingWhitespace()
     if &l:modifiable
         " don't lose user position when trimming trailing whitespace
         let s:view = winsaveview()
@@ -132,7 +133,7 @@ function! s:TrimTrailingWhitespace()
             call winrestview(s:view)
         endtry
     endif
-endfunction 
+endfunction
 
 " take from https://github.com/junegunn/goyo.vim
 function! s:goyo_enter()
