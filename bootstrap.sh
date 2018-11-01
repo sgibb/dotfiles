@@ -1,8 +1,5 @@
 #!/bin/bash
 
-cd ~
-git clone git@github.com:sgibb/dotfiles.git ~/dotfiles
-cd ~/dotfiles
 stow --target ~ stow ## setup stow
 
 for PACKAGE in */; do

@@ -19,6 +19,14 @@ stow --target ~ stow ## setup stow
 stow bash tmux vim
 ```
 
+Or use:
+
+```bash
+git clone git@github.com:sgibb/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+./bootstrap.sh
+```
+
 ## Uninstall dotfiles
 
 ```bash
