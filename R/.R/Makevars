@@ -1,0 +1,10 @@
+# http://dirk.eddelbuettel.com/blog/2017/11/27/#011_faster_package_installation_one
+VER=
+CCACHE=ccache
+CC=$(CCACHE) gcc$(VER) -Wall
+CXX=$(CCACHE) g++$(VER) -Wall
+CXX11=$(CCACHE) g++$(VER) -Wall
+CXX14=$(CCACHE) g++$(VER) -Wall
+FC=$(CCACHE) gfortran$(VER) -Wall
+F77=$(CCACHE) gfortran$(VER) -Wall
+MAKE=make -j3
