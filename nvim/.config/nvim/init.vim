@@ -170,6 +170,7 @@ ab mdc <CR>%<CR>%<CR>Chambers2015<CR>%<CR>basics physiologie misc<CR>---<CR><Esc
 " nvim-R
 let R_esc_term = 0
 let R_path='/home/sebastian/opt/R/bin/'
+let rout_follow_colorscheme = 1
 autocmd FileType r set tags+=~/.cache/Nvim-R/Rtags
 
 " markdown, code syntax highlighting in code blocks
