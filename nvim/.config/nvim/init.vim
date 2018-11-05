@@ -125,16 +125,27 @@ autocmd BufWritePre <buffer> call s:TrimTrailingWhitespace()
 " (n)vim thinks *.md is Modula-2 but we want markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" coupling of Goyo + Limelight
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 " }}}
 
 " augroup {{{
+augroup mail
+    autocmd!
+    autocmd Filetype mail setlocal spell spelllang=en_us,de_de
+    autocmd Filetype mail packadd goyo.vim
+    autocmd Filetype mail packadd limelight.vim
+    autocmd Filetype mail colorscheme pencil
+    autocmd Filetype mail :Goyo
+    autocmd BufEnter alot* :normal ggo
+augroup END
+
 augroup markdown
     autocmd!
     autocmd Filetype markdown,mkd packadd goyo.vim
     autocmd Filetype markdown,mkd packadd limelight.vim
     autocmd Filetype markdown,mkd colorscheme pencil
-    autocmd! User GoyoEnter nested call <SID>goyo_enter()
-    autocmd! User GoyoLeave nested call <SID>goyo_leave()
 augroup END
 " }}}
 
