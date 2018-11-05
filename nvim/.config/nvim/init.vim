@@ -163,7 +163,6 @@ ab vg Viele Grüße,<CR><CR>Sebastian
 ab bw Best wishes,<CR><CR>Sebastian
 ab mfg Mit freundlichen Grüßen<CR><CR>Sebastian Gibb
 ab kr Kind regards,<CR><CR>Sebastian Gibb
-ab mdc <CR>%<CR>%<CR>Chambers2015<CR>%<CR>basics physiologie misc<CR>---<CR><Esc>6ka
 " }}}
 
 " plugin configuration {{{
