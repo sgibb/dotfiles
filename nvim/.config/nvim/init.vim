@@ -10,6 +10,7 @@ function! PackagerInit() abort
     call packager#add('kristijanhusak/vim-packager', { 'type': 'opt' })
 
     call packager#add('tpope/vim-sensible')
+    call packager#add('tpope/vim-speeddating')
     call packager#add('tpope/vim-surround')
     call packager#add('tpope/vim-repeat')
     call packager#add('tpope/vim-fugitive')
