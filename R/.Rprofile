@@ -14,6 +14,5 @@ if(interactive()) {
         source("http://bioconductor.org/biocLite.R")
         biocLite(...)
     }
-    testf <- function(x)test_that::test(filter=x)
     la <- function()devtools::load_all()
 }
