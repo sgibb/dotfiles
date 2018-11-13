@@ -14,6 +14,7 @@ alias R='LANGUAGE=en ${HOME}/bin/Rdevel'
 
 alias a='khal list today 7d'
 alias e='nvim'
+alias t='todoman'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
