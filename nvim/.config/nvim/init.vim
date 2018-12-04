@@ -17,6 +17,9 @@ function! PackagerInit() abort
 
     call packager#add('junegunn/limelight.vim', { 'type': 'opt' })
     call packager#add('junegunn/goyo.vim', { 'type': 'opt' })
+    call packager#add('vim-pandoc/vim-pandoc')
+    call packager#add('vim-pandoc/vim-pandoc-syntax')
+    call packager#add('vim-pandoc/vim-criticmarkup')
 
     call packager#add('editorconfig/editorconfig-vim')
 
