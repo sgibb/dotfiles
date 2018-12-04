@@ -43,6 +43,7 @@ let maplocalleader = ","
 
 " remap esc
 inoremap jk <esc>
+tnoremap jk <C-\><C-N>
 
 " switch between windows/even in terminal mode
 tnoremap <A-h> <C-\><C-N><C-w>h
