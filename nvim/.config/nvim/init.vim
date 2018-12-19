@@ -201,7 +201,7 @@ ab kr Kind regards,<CR><CR>Sebastian Gibb
 " plugin configuration {{{
 " nvim-R
 let R_esc_term = 0
-let R_path='/home/sebastian/opt/R/bin/'
+let R_path='~/opt/R/bin/'
 let rout_follow_colorscheme = 1
 autocmd FileType r set tags+=~/.cache/Nvim-R/Rtags
 
