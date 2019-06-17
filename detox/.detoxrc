@@ -1,0 +1,15 @@
+sequence default {
+	utf_8;
+	safe;
+	wipeup {remove_trailing;};
+    lower;
+};
+
+ignore {
+	filename ".arch-params";
+	filename ".git";
+	filename ".mozilla";
+	filename ".themes";
+	filename "{arch}";
+};
+
