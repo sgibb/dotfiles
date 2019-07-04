@@ -7,3 +7,8 @@ week_start = monday
 log_current = true
 pager = true
 report_current = true
+
+[backend]
+url = https://api.crick.io/watson
+token =
+

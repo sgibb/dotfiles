@@ -1,2 +1,6 @@
 nvim/.config/nvim/pack/*
+watson/.config/watson/*.bak
+watson/.config/watson/frames
+watson/.config/watson/state
+watson/.config/watson/last_sync
 *.local
