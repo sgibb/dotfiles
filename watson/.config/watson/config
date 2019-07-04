@@ -1,0 +1,9 @@
+[options]
+stop_on_start = true
+stop_on_restart = true
+date_format = %d.%m.%Y
+time_format = %H:%M:%S%z
+week_start = monday
+log_current = true
+pager = true
+report_current = true
