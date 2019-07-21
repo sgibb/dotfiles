@@ -19,3 +19,6 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias exifrm='exiftool -all= '
+
+alias ocrpdfde='ocrmypdf --language "deu" --deskew --rotate-pages --clean --clean-final --remove-background --output-type pdfa'
+alias ocrpdfen='ocrmypdf --language "eng" --deskew --rotate-pages --clean --clean-final --remove-background --output-type pdfa'
