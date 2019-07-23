@@ -1,4 +1,6 @@
 .netrwhist
 *.swp
+*.so
+*.o
 playground
 playground/*
