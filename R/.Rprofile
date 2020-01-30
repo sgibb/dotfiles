@@ -9,10 +9,5 @@ if(interactive()) {
     if (grepl("unstable", version$version.string)) {
         options(prompt="Rdevel> ")
     }
-
-    bL <- function(...) {
-        source("http://bioconductor.org/biocLite.R")
-        biocLite(...)
-    }
     la <- function()devtools::load_all()
 }
