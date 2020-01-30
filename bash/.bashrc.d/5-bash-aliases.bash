@@ -10,7 +10,7 @@ alias la='ls -ah'
 alias lt="ls -lth"
 
 alias git='LANG=en_US git'
-alias R='LANGUAGE=en ${HOME}/bin/Rdevel --no-save'
+alias R='LANGUAGE=en R --no-save'
 
 alias a='khal list today 7d'
 alias e='${EDITOR}'
