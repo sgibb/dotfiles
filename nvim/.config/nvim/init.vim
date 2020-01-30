@@ -204,6 +204,7 @@ let R_esc_term = 0
 let R_path='~/opt/bin/'
 let rout_follow_colorscheme = 1
 autocmd FileType r set tags+=~/.cache/Nvim-R/Rtags
+nmap <LocalLeader>tt :RTestFile<CR>
 
 " markdown, code syntax highlighting in code blocks
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'r']
