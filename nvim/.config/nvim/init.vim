@@ -32,6 +32,9 @@ function! PackagerInit() abort
     call packager#add('morhetz/gruvbox', { 'type': 'opt' })
     call packager#add('reedes/vim-colors-pencil', { 'type': 'opt' })
     call packager#add('crusoexia/vim-monokai', { 'type': 'opt' })
+
+    " syntax highlighting
+    call packager#add('rbberger/vim-singularity-syntax')
 endfunction
 
 " package manager
