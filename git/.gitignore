@@ -2,5 +2,7 @@
 *.swp
 *.so
 *.o
+*.log
+*.aux
 playground
 playground/*
