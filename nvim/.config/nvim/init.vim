@@ -34,6 +34,7 @@ function! PackagerInit() abort
     call packager#add('crusoexia/vim-monokai', { 'type': 'opt' })
 
     " syntax highlighting
+    call packager#add('luochen1990/rainbow')
     call packager#add('rbberger/vim-singularity-syntax')
 endfunction
 
