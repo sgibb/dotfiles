@@ -33,4 +33,4 @@ function .prompt {
     PS1+="\]\n${EXITCOLOR}❯${RESET} "
     PS2="❯ "
 }
-PROMPT_COMMAND=".prompt"
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} .prompt"
