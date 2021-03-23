@@ -43,3 +43,7 @@
 	user = sgibb
 [include]
     path = .gitconfig.local
+[credential]
+	helper = cache
+[init]
+	defaultBranch = main
