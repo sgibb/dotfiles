@@ -1,13 +1,23 @@
-# ~/.bashrc is normally executed by bash only for non-login scripts such as ssh,
-# cron, etc. Thus any non-interactive functions in ~/.bashrc shoud be as
-# lightweight (minimal) as possible to reduce the overhead when starting
-# a non-login shell.
+# Bash initialization for interactive non-login shells and
+# for remote shells (info "(bash) Bash Startup Files").
 
-# If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+# Export 'SHELL' to child processes.  Programs such as 'screen'
+# honor it and otherwise use /bin/sh.
+export SHELL
+
+if [[ $- != *i* ]]
+then
+    # We are being invoked from a non-interactive shell.  If this
+    # is an SSH session (as in "ssh host command"), source
+    # /etc/profile so we get PATH and other essential variables.
+    [[ -n "$SSH_CLIENT" ]] && source /etc/profile
+
+    # Don't do anything else.
+    return
+fi
+
+# Source the system-wide file.
+source /etc/bashrc
 
 if [ -f "${HOME}/.profile" ]; then
     source "${HOME}/.profile";
