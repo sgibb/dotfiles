@@ -2,6 +2,7 @@ alias ..='cd ..'
 alias ~='cd ~'
 alias -- -='cd -'
 
+alias ls='ls --color=auto'
 alias l='ls -1'
 alias ll='ls -l'
 # List all size human readable
