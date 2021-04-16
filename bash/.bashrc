@@ -17,11 +17,10 @@ then
 fi
 
 # Source the system-wide file.
-source /etc/bashrc
+[[ -f /etc/bashrc ]] && source /etc/bashrc
+[[ -f /etc/bash.bashrc ]] && source /etc/bash.bashrc
 
-if [ -f "${HOME}/.profile" ]; then
-    source "${HOME}/.profile";
-fi
+[[ -f "${HOME}/.profile" ]] && source "${HOME}/.profile"
 
 if [ -d "${HOME}/.bashrc.d" ]; then
     for FILE in $(ls ${HOME}/.bashrc.d/*.bash); do
